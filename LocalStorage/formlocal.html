@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background: linear-gradient(to bottom right, #d3e0ea, #fff);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            font-size: 25px;
+            align-content: center;
+            color: #0a0a0a;
+            text-shadow: 0px 2px 5px #333;
+            margin-left:230px;
+            margin-top:10px;
+        }
+        form{
+            background-color:white;
+            width:600px;
+            height:860px;
+            padding:50px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px #0a0a0a;
+        }
+        form label{
+            font-size: 25px;
+            color:black;
+            margin-bottom:20px;
+            display: block;
+        }
+        form input{
+            font-size: 20px;
+            padding:15px;
+            border:#0a0a0a;
+            border-radius: 1px solid black;
+            box-shadow: 0 2px 5px #333;
+            margin-bottom: 20px;
+            width:550px;
+        }
+        button{
+            width:580px;
+            height:50px;
+            background-color: blue;
+            color: white;
+            border:blue;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Sign Up </h1>
+        <label for="d1">First Name</label>
+        <input type="text" placeholder="Ex.Kavisri" id="d1" required><br>
+
+        <label for="d2">Last Name</label>
+        <input type="text" placeholder="Ex.N S" id="d2"><br>
+
+        <label for="d3">Email</label>
+        <input type="email" placeholder="Ex.kavisri@gmail.com" id="d3"><br>
+
+        <label for="d4">Number</label>
+        <input type="number" placeholder="Ex.9787243576" id="d4"><br>
+
+        <label for="d5">Password</label>
+        <input type="password" placeholder="Ex. ******" id="d5"><br>
+
+        <label for="d6">Confirm password</label>
+        <input type="password" placeholder="Ex. ******" id="d6"><br>
+
+        <button type="button" onclick="data()">Sign Up</button>
+    </form>
+    <script>
+        function data()
+        {
+            let fna=document.getElementById("d1").value;
+            let lna=document.getElementById("d2").value;
+            let em=document.getElementById("d3").value;
+            let nu=document.getElementById("d4").value;
+            let pa=document.getElementById("d5").value;
+            let cpa=document.getElementById("d6").value;
+            localStorage.setItem("d1",fna);
+            localStorage.setItem("d2",lna);
+            localStorage.setItem("d3",em);
+            localStorage.setItem("d4",nu);
+            localStorage.setItem("d5",pa);
+            localStorage.setItem("d6",cpa);
+            alert("Data has been saved Successfully!!");
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
