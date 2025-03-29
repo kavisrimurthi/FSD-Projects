@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services Section</title>
+<style>
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Services Section Styles */
+.services-section {
+    padding: 80px 0;
+}
+
+.services-section h2 {
+    font-size: 3em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-title {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.service-description {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.learn-more-btn {
+    display: block;
+    margin: 40px auto 0;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Added */
+}
+
+.learn-more-btn:hover {
+    background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+
+<section class="services-section">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3 class="service-title">Primary Care</h3>
+                <p class="service-description">Comprehensive primary healthcare services for patients of all ages.</p>
+            </div>
+            <div class="service-item">
+                <h3 class="service-title">Specialty Care</h3>
+                <p class="service-description">Specialized medical services tailored to individual needs.</p>
+            </div>
+            <div class="service-item">
+                <h3 class="service-title">Diagnostic Services</h3>
+                <p class="service-description">State-of-the-art diagnostic testing and imaging services.</p>
+            </div>
+            <div class="service-item">
+                <h3 class="service-title">Emergency Care</h3>
+                <p class="service-description">Immediate medical attention for emergencies and urgent care needs.</p>
+            </div>
+            <div class="service-item">
+                <h3 class="service-title">Preventive Medicine</h3>
+                <p class="service-description">Proactive healthcare measures to prevent illness and promote wellness.</p>
+            </div>
+            <div class="service-item">
+                <h3 class="service-title">Rehabilitation Services</h3>
+                <p class="service-description">Specialized therapies and programs to aid recovery and improve function.</p>
+            </div>
+        </div>
+        <a href="about.html" class="learn-more-btn">Learn More</a>
+    </div>
+</section>
+
+</body>
+</html>
+

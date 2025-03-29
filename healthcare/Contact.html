@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<style>
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.contact-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.contact-section address {
+    margin-bottom: 20px;
+    font-style: normal;
+}
+
+.contact-section a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+    color: #0056b3;
+}
+
+.contact-info {
+    margin-bottom: 40px;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.contact-info p:last-child {
+    margin-bottom: 0;
+}
+
+.contact-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: left;
+}
+
+.contact-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.message-box {
+    position: relative;
+}
+
+.message-box textarea {
+    height: 150px;
+}
+
+.submit-message {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-message:hover {
+    background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+
+<section class="contact-section">
+    <div class="container">
+        <h2>Contact Us</h2>
+        
+        <div class="contact-info">
+            <p><span>Address:</span> Healthcare Maintenance, 123 Main Street, City, State 12345</p>
+            <p><span>Phone:</span> (123) 456-7890</p>
+            <p><span>Email:</span> info@healthcaremaintenance.com</p>
+        </div>
+        
+        <div class="contact-form">
+            <h3>Send us a message</h3>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <div class="message-box">
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+                    <button type="submit" class="submit-message">Submit</button>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+</section>
+
+</body>
+</html>
