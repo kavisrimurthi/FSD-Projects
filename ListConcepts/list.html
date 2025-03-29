@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            background-color: white;
+            color: #333;
+            padding:20px;
+        }
+        header{
+            background-color: #4CAF50;
+            color:white;
+            text-align: center;
+            padding:15px ;
+            margin-bottom: 30px;
+        }
+        section{
+            background-color: #fff;
+            color:#333;
+            padding:20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(14, 13, 13, 0.1);
+        }
+        h2{
+            margin-top:0px;
+        }
+        ul{
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        ol{
+            list-style-type: decimal;
+            margin-left: 20px;
+        }
+        li{
+            margin-bottom: 10px;
+        }
+        dl{
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-left: 5px solid#4CAF50;
+            margin-left: 20px;
+        }
+        dt{
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+        dd{
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML List Tags Demonstration</h1>
+        <p>Examples of unordered, ordered, and description lists</p>
+    </header>
+    <main>
+        <section>
+            <h2>Unordered List (<code>&lt;ul&gt;</code>)</h2>
+            <p>An unordered list is a list of items where the order does not matter. It is represented with bullet points by default.</p>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Ordered List (<code>&lt;ol&gt;</code>)</h2>
+            <p>An ordered list is a list of items where the order does matter. It is represented with numbers by default.</p>
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Nested Lists</h2>
+            <p>Lists can be nested inside one another, allowing for hierarchical structuring of content.</p>
+            <ul>
+                <li>Item 1
+                    <ul>
+                        <li>Sub-item 1.1</li>
+                        <li>Sub-item 1.2</li>
+                    </ul>
+                </li>
+                <li>Item 2</li>
+                <li>Item 3
+                    <ol>
+                        <li>Sub-item 3.1</li>
+                        <li>Sub-item 3.2</li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Description List (<code>&lt;dl&gt;</code>)</h2>
+            <p>A description list (<code>&lt;dl&gt;</code>) is used to display a list of terms and their corresponding descriptions.</p>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HTML stands for HyperText Markup Language and is used to create the structure of a web page.</dd>
+                <dt>CSS</dt>
+                <dd>CSS stands for Cascading Style Sheets and is used for styling web pages.</dd>
+                <dt>JavaScript</dt>
+                <dd>JavaScript is a programming language that adds interactivity to web pages.</dd>
+            </dl>
+        </section>
+    </main>
+</body>
+</html>
